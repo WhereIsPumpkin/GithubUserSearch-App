@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		758138572B22497B00369332 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758138562B22497B00369332 /* SearchBarView.swift */; };
 		758C2CC12B220E53002F5AE3 /* GithubUserSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758C2CC02B220E53002F5AE3 /* GithubUserSearchApp.swift */; };
 		758C2CC32B220E53002F5AE3 /* GithubUserSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758C2CC22B220E53002F5AE3 /* GithubUserSearchView.swift */; };
 		758C2CC52B220E54002F5AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758C2CC42B220E54002F5AE3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		758138562B22497B00369332 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		758C2CBD2B220E53002F5AE3 /* GithubUserSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUserSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758C2CC02B220E53002F5AE3 /* GithubUserSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserSearchApp.swift; sourceTree = "<group>"; };
 		758C2CC22B220E53002F5AE3 /* GithubUserSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserSearchView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				758C2CE22B221ACD002F5AE3 /* HeaderView.swift */,
+				758138562B22497B00369332 /* SearchBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758138572B22497B00369332 /* SearchBarView.swift in Sources */,
 				758C2CC32B220E53002F5AE3 /* GithubUserSearchView.swift in Sources */,
 				758C2CE32B221ACD002F5AE3 /* HeaderView.swift in Sources */,
 				758C2CC12B220E53002F5AE3 /* GithubUserSearchApp.swift in Sources */,

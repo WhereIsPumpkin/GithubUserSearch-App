@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct GithubUserSearchApp: App {
+    
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some Scene {
         WindowGroup {
             GithubUserSearchView()
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }
