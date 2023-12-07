@@ -11,6 +11,8 @@
 		758C2CC32B220E53002F5AE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758C2CC22B220E53002F5AE3 /* ContentView.swift */; };
 		758C2CC52B220E54002F5AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758C2CC42B220E54002F5AE3 /* Assets.xcassets */; };
 		758C2CC82B220E54002F5AE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758C2CC72B220E54002F5AE3 /* Preview Assets.xcassets */; };
+		758C2CDC2B22142F002F5AE3 /* SpaceMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 758C2CDB2B22142F002F5AE3 /* SpaceMono-Bold.ttf */; };
+		758C2CDE2B221437002F5AE3 /* SpaceMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 758C2CDD2B221437002F5AE3 /* SpaceMono-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		758C2CC22B220E53002F5AE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		758C2CC42B220E54002F5AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		758C2CC72B220E54002F5AE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		758C2CDB2B22142F002F5AE3 /* SpaceMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-Bold.ttf"; sourceTree = "<group>"; };
+		758C2CDD2B221437002F5AE3 /* SpaceMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceMono-Regular.ttf"; sourceTree = "<group>"; };
+		758C2CDF2B221462002F5AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,8 @@
 				758C2CC02B220E53002F5AE3 /* GithubUserSearchApp.swift */,
 				758C2CC22B220E53002F5AE3 /* ContentView.swift */,
 				758C2CC42B220E54002F5AE3 /* Assets.xcassets */,
+				758C2CDA2B221424002F5AE3 /* Font */,
+				758C2CDF2B221462002F5AE3 /* Info.plist */,
 				758C2CC62B220E54002F5AE3 /* Preview Content */,
 			);
 			path = GithubUserSearch;
@@ -65,6 +72,15 @@
 				758C2CC72B220E54002F5AE3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		758C2CDA2B221424002F5AE3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				758C2CDD2B221437002F5AE3 /* SpaceMono-Regular.ttf */,
+				758C2CDB2B22142F002F5AE3 /* SpaceMono-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				758C2CC82B220E54002F5AE3 /* Preview Assets.xcassets in Resources */,
+				758C2CDE2B221437002F5AE3 /* SpaceMono-Regular.ttf in Resources */,
+				758C2CDC2B22142F002F5AE3 /* SpaceMono-Bold.ttf in Resources */,
 				758C2CC52B220E54002F5AE3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +292,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GithubUserSearch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GithubUserSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +321,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GithubUserSearch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GithubUserSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
