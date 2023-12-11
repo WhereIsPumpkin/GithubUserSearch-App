@@ -17,10 +17,14 @@ struct GithubUserSearchView: View {
             Color("background")
                 .ignoresSafeArea()
             
-            VStack(spacing: 16) {
+            VStack(spacing: 36) {
                 HeaderView(isDarkMode: $isDarkMode)
                 
-                SearchBarView(username: $username, isDarkMode: $isDarkMode)
+                VStack(spacing: 16) {
+                    SearchBarView(username: $username, isDarkMode: $isDarkMode)
+                    
+                    MainBodyView()
+                }
                 
                 Spacer()
             }

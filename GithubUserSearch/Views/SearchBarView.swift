@@ -21,7 +21,7 @@ struct SearchBarView: View {
             
             TextField("Search GitHub username…", text: $username)
                 .font(Font.custom("Space Mono", size: 14))
-                .foregroundColor(!isDarkMode ? Color(red: 0.29, green: 0.42, blue: 0.61) : Color(.white))
+                .foregroundColor(Color("body"))
             
             Button(action: {
                 print("Your username is: \(username)")

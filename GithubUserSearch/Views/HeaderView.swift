@@ -24,7 +24,7 @@ struct HeaderView: View {
                 isDarkMode.toggle()
             }, label: {
                 HStack {
-                    Text("DARK")
+                    Text(!isDarkMode ? "DARK" : "LIGHT")
                         .font(
                             Font.custom("Space Mono", size: 14)
                                 .weight(.bold)
