@@ -11,6 +11,7 @@ struct SearchBarView: View {
     
     @Binding var username: String
     @Binding var isDarkMode: Bool
+    @ObservedObject var viewModel: GithubUserViewModel
     
     var body: some View {
         HStack(alignment: .center) {
@@ -24,7 +25,8 @@ struct SearchBarView: View {
                 .foregroundColor(Color("body"))
             
             Button(action: {
-                print("Your username is: \(username)")
+                viewModel.fetchUser(username) 
+                hideKeyboard()
             }) {
                 Text("Search")
                     .font(
@@ -48,6 +50,6 @@ struct SearchBarView: View {
 
 
 #Preview {
-    SearchBarView(username: .constant(""), isDarkMode: .constant(false))
+    SearchBarView(username: .constant(""), isDarkMode: .constant(false), viewModel: GithubUserViewModel())
 }
 

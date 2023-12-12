@@ -10,7 +10,7 @@ import SwiftUI
 struct GithubUserSearchView: View {
     
     @AppStorage("isDarkMode") private var isDarkMode = false
-    @State private var username = ""
+    @StateObject var viewModel = GithubUserViewModel()
     
     var body: some View {
         ZStack {
@@ -21,9 +21,18 @@ struct GithubUserSearchView: View {
                 HeaderView(isDarkMode: $isDarkMode)
                 
                 VStack(spacing: 16) {
-                    SearchBarView(username: $username, isDarkMode: $isDarkMode)
+                    SearchBarView(username: $viewModel.username, isDarkMode: $isDarkMode, viewModel: viewModel)
                     
-                    MainBodyView()
+                    if viewModel.isLoading {
+                        ProgressLoaderView()
+                    } else if let error = viewModel.error {
+                        ErrorView(text: error)
+                    } else if let _ = viewModel.user {
+                        MainBodyView(viewModel: viewModel)
+                    } else {
+                        ErrorView(text: "Start your search to discover GitHub users")
+                    }
+                    
                 }
                 
                 Spacer()
